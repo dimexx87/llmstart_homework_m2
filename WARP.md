@@ -81,7 +81,7 @@ docker-compose up -d
 4. `bot.py` sends response back to user via Telegram
 
 ### Memory Architecture
-- Conversation history stored in memory (`dict`: user_id → message list)
+- Conversation history stored in memory (`dict`: chat_id → message list)
 - No persistent storage - history lost on bot restart
 - Context limited to last 20 messages per conversation
 
